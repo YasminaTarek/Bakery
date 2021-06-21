@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+h1, h2, h4{
+    font-family: 'Alegreya', serif;
+}
+h1{
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #303030;
+}
+p{
+    color: #686868;
+    line-height: 30px;
+}
+.clr {
+    clear: both;
+}
+
+/*nav bar*/
+.nav {
+width: 100%;
+background-color: white;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 5;
+}
+.nav .logo{
+display: inline-block;
+width: 180px;
+margin: 5px 90px 5px;
+float: left;
+}
+.nav .logo img{
+width: 100%;
+}
+.nav .links {
+display: inline-block;
+float: right;
+margin-right: 85px;
+}
+.links a{
+    text-decoration: none;
+    color: #999;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 13px;
+    margin-left: 5px;
+    font-size: 18px;
+    font-family: 'Alegreya', serif;
+}
+.links .home {
+    color: black;
+    border-top: 3px solid rgb(142, 119, 84);
+}
+
+
+@media screen and (max-width: 992px){
+    .nav {
+        opacity: 0;
+    }
+}
+/*end nav*/
+
+/*icons*/
+.icons{
+    width: 40px;
+    height: 85px;
+    background-color: white;
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    z-index: 4;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.icons a i{
+    font-size: 20px;
+    padding: 13px 8px 2px;
+    color: #666;
+}
+.icons a i:hover{
+    color: 2196f3;
+}
+/*end icons*/
+
+/*hero section*/
+.hero {
+    width: 100%;
+    height: 800px;
+    background-image: url(../Images/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 250px;
+    box-sizing: border-box;
+}
+.hero .content{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-size: 24px;
+}
+.hero .content p {
+    color: rgba(255,255,255, .92);
+}
+.content .line{
+    line-height: 50px;
+}
+.content h1{
+    font-size: 76px;
+    font-weight: 200;
+    color: white;
+    margin: 5px 0px 20px;
+}
+.content a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 28px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px 4px 0px;
+    border-radius: 4px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.btn1{
+    border: 2px solid #8e7754;
+    background-color: #8e7754;
+}
+.btn2{
+    border: 2px solid white;
+    background-color: transparent;
+}
+.content a:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+
+@media screen and (max-width: 600px){
+    .hero {
+        height: 950px;
+    }
+}
+/*end hero*/
+
+/*who section*/
+.who{
+    width: 85%;
+    margin: 90px auto 0px;
+}
+.who .pic{
+    width: 45%;
+    float: left;
+}
+.who .pic img{
+    width: 100%;
+}
+.who .disc{
+    width: 55%;
+    float: left;
+    padding: 25px 17px 0 95px;
+    box-sizing: border-box;
+}
+.disc .p{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.ic{
+    margin-bottom: 20px;
+}
+.ic p{
+    display: inline-block;
+    margin-left: 15px;
+}
+.ic .fa{
+    color: #8e7754;
+    font-size: 20px;
+    padding: 10px;
+}
+.ic .i {
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 50%;
+    width: 44px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 0px){
+    .who .pic {
+        padding: 0px;
+        width: 100%;
+        float: none;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .who .disc {
+        padding: 0px;
+        padding-top: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        float: none;
+    }
+} 
+@media screen and (max-width: 900px) and (min-width: 768px){
+    .who .disc {
+        padding: 30px;
+    }
+} 
+/*end who*/
+
+
+/*location section*/
+.location{
+    background-color: #f8f8f8;
+    margin: 90px auto 0px;
+    padding: 20px 0;
+}
+.location .loc{
+    width: 85%;
+    margin: 70px auto;
+}
+.loc .disc {
+    width: 55%;
+    float: left;
+    padding: 30px 20px 0;
+    box-sizing: border-box;
+}
+.loc .pic{
+    width: 45%;
+    float: left;
+    padding: 30px 20px 0;
+    box-sizing: border-box;
+}
+.loc .pic img{
+    width: 100%;
+}
+.loc .disc p{
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 0px){
+    .location {
+        margin-top: 0;
+        padding-top: 40px;
+    }
+    .location .loc {
+        margin: 20px auto;
+    }
+    .loc .pic {
+        width: 100%;
+        float: none;
+        padding: 0px;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    .loc .disc {
+        padding: 0px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        float: none;
+    }
+}
+/*end location*/
+
+
+/*baking section*/
+.baking{
+    width: 85%;
+    margin: 90px auto 0px;
+}
+.baking .head h1, .cards h2{
+    text-align: center;
+}
+.baking .head p, .cards p{
+    color: #686868;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.baking .cards{
+    margin-top: 50px;
+}
+.cards .card{
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.card img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 600px){
+    .baking{
+        margin-top: 0;
+        padding-top: 40px;
+    }
+    .cards .card {
+        padding: 0px 10px 20px;
+        box-sizing: border-box;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 0px){
+    .baking{
+        margin-top: 0;
+        padding-top: 40px;
+    }
+    .cards .card {
+        padding: 0px;
+        box-sizing: border-box;
+        width: 100%;
+        margin: auto;
+        float: none;
+    }
+}
+/*end baking*/
+
+
+/*contact section*/
+.contact{
+    background-color: #f8f8f8;
+    width: 100%;
+    margin: 90px auto 0px;
+    padding: 70px 0;
+}
+.contact .cont{
+    width: 85%;
+    margin: auto;
+}
+.cont .info{
+    width: 55%;
+    float: left;
+    padding-top: 20px;
+    padding-right: 120px;
+    box-sizing: border-box;
+}
+.cont .map{
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 45%;
+    height: 500px;
+}
+/* iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+} */
+.map .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    background-size: 100% 100%;
+}
+.mar{
+    margin-bottom: 20px;
+}
+.info .ic .i{
+    border: 1px solid #8e7754;
+    background-color: #8e7754;
+    width: 40px;
+}
+.info .ic i{
+    color: white;
+    font-size: 18px;
+}
+.fa-phone{
+    transform: rotate(100deg);
+}
+
+
+@media screen and (max-width: 925px) and (min-width: 0px){
+    .cont .info {
+        padding: 20px 30px 0 40px; 
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 0px){
+    .contact {
+        margin-top: 0;
+        padding-top: 40px;
+    }
+    .cont .info {
+        padding: 0px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        float: none;
+    }
+    .cont .map {
+        padding: 0px;
+        padding-top: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        float: none;
+    }
+}
+/*end contact*/
+
+
+/*footer*/
+.footer{
+    background-color: #403d38;
+    opacity: 1;
+    width: 100%;
+}
+.footer .sections{
+    width: 100%;
+    padding: 70px 0px;
+    box-sizing: border-box;
+}
+.sections .sec{
+    width: 25%;
+    float: left;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+.mtop{
+    background-color: #403d38;
+    opacity: 0.8;
+}
+.sec .mtop, .sec .mar{
+    margin-top: 20px;
+}
+.sec .mtop .ic{
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+}
+.sec .mtop .pad{
+    margin: 0 0 15px 0;
+    padding: 0 0 15px 0;
+}
+.sec, .sec .ic i{
+    color: #969696;
+}
+.sec .ic i{
+    font-size: 16px;
+    padding: 0;
+}
+.sec h4{
+    color: white;
+}
+.sec .ic p a, .sec p{
+    text-decoration: none;
+    color: #969696;
+}
+.sec p{
+    margin-left: 5px;
+} 
+.hr{
+    border-bottom: 0.1px solid rgba(255,255,255,0.05);
+    padding-bottom: 10px;
+}
+.sections .background{
+    background-image: url(../Images/contact-details-map.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 100% 50%;
+}
+.footer .container{
+    width: 85%;
+    margin: auto;
+    /* background-image: url(../Images/contact-details-map.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    background-size: 250px 200px; */
+    box-sizing: border-box;
+}
+.rel{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.rel p{
+    margin-left: 22px;
+}
+.pos{
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+.posP{
+    position: absolute;
+    left: 45;
+    top: 7px;
+}
+.posTop {
+    margin-top: 90px;
+}
+/*copy*/
+.copy{
+    width: 100%;
+    background-color: #353330;
+    text-align: center;
+    padding: 50px 0px 40px;
+    box-sizing: border-box;
+}
+.copy .container{
+    background-image: none;
+}
+.copy .light{
+    width: 75%;
+    margin: 10px auto;
+}
+.copy .cp{
+    width: 100%;
+}
+.copy .copyIcons{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.copyIcons a{
+    margin: 0 3px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #484540;
+    color: #8c8a86;
+}
+.copyIcons .facebook:hover{
+    background-color: #3b5998;
+    color: white;
+}
+.copyIcons .google:hover{
+    background-color: #db4a39;
+    color: white;
+}
+.copyIcons .linked:hover{
+    background-color: #0e76a8;
+    color: white;
+}
+.copyIcons .twitter:hover{
+    background-color: #00acee;
+    color: white;
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .sections .sec {
+        padding: 30px;
+        box-sizing: border-box;
+        width: 50%;
+    }
+    .sections .background{
+        background-image: url(../Images/contact-details-map.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 80% 80%;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 0px){
+    .light img{
+        width: 100%;
+    }
+    .sections .sec {
+        padding: 0px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        margin: auto;
+        float: none;
+    }
+    .sections .background{
+        background-image: url(../Images/contact-details-map.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 50% 90%;
+    }
+}
+/*end footer*/
